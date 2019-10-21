@@ -60,6 +60,8 @@
                 display: block;
                 color: #000000;
                 text-decoration: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
             
             .button a:hover{
@@ -86,8 +88,7 @@
                 border: 5px solid #FFFFFF;
                 background-color: #FFFFFF;
                 max-width: 1000px;
-                width: 14.2%;
-                float: left;
+                width: 100%;
                 padding-left: 6px;
                 text-align: center;
             }
@@ -110,8 +111,9 @@
                 transition: 0.4s;
             }
             
-            .imgtext{
-                position: absolute;
+            .container{
+                position: relative;
+                text-align: center;
                 color: #000000;
             }
             
@@ -139,7 +141,16 @@
                     text-decoration: none;
                     display: inline;
                 }
-                
+                .col{
+                    box-sizing: border-box;
+                    border: 5px solid #FFFFFF;
+                    background-color: #FFFFFF;
+                    max-width: 1000px;
+                    width: 14.2%;
+                    float: left;
+                    padding-left: 6px;
+                    text-align: center;
+                }
             }
             
         </style>
@@ -147,6 +158,8 @@
     </head>
     
     <body>
+        
+        <!--header tag with navbar inside-->
         
         <div class="header">
             <h1 id="top">Temples of Japan</h1>
@@ -163,16 +176,17 @@
         
         <br/>
         
+        <!--main content within mainBox tag-->
+        
         <div class="mainBox">  
             
             
                 <h2 id="fushimiinari">Fushimi Inari</h2>                      
-                <p>Fushimi Inari Shrine (伏見稲荷大社, Fushimi Inari Taisha) is an important Shinto shrine in southern Kyoto. It's famous for its thousands of torii gates, which straddle a network of trails behind its main buildings. The trails lead into the wooded forest of the sacred Mount Inari, which stands at 233 meters and belongs to the shrine grounds.</p>         
-            
+                <p>Fushimi Inari Shrine (伏見稲荷大社, Fushimi Inari Taisha) is an important Shinto shrine in southern Kyoto. It's famous for its thousands of torii gates, which straddle a network of trails behind its main buildings. The trails lead into the wooded forest of the sacred Mount Inari, which stands at 233 meters and belongs to the shrine grounds.</p>     
             <div class="imgoverlay">
                 <img src="images/fushimiinarishrine-rs.jpg" alt="this is a photo of the base of Fushimi Inari">
             </div>
-
+            
                 <p>Fushimi Inari is the most important of several thousands of shrines dedicated to Inari, the Shinto god of rice. Foxes are thought to be Inari's messengers, resulting in many fox statues across the shrine grounds. Fushimi Inari Shrine has ancient origins, predating the capital's move to Kyoto in 794.</p>
                     
             <div class="imgoverlay">
@@ -244,6 +258,8 @@
             
             <p>Kinkakuji (金閣寺, Golden Pavilion) is a Zen temple in northern Kyoto whose top two floors are completely covered in gold leaf. Formally known as Rokuonji, the temple was the retirement villa of the shogun Ashikaga Yoshimitsu, and according to his will it became a Zen temple of the Rinzai sect after his death in 1408. Kinkakuji was the inspiration for the similarly named Ginkakuji (Silver Pavilion), built by Yoshimitsu's grandson, Ashikaga Yoshimasa, on the other side of the city a few decades later.</p>
         
+        <!--image overlay makes the image fade slightly when hovered over (code for this in the style tag at the top of the page)-->
+            
         <div class="imgoverlay">
             <img src="images/kinkakuji-rs.jpg" alt="this is a photo of the Golden Pavilion">
         </div>
@@ -328,8 +344,6 @@
                 <div class="button">
                     <a href=https://kyoto.travel/en/shrine_temple/180>Kyoto Travel</a>
                 </div> 
-                
-                <br/>
                                   
                 <div class="button">
                     <a href="https://www.insidekyoto.com/fushimi-inari-hike-kyoto">Fushimi Inari Hike</a>
@@ -344,6 +358,10 @@
                 <div class="button">
                     <a href="https://www.visitnara.jp/destinations/destination/horyuji-temple/">Visit Nara</a>
                 </div>
+                
+                <div class="button">
+                    <a href="https://www.ancient.eu/Horyuji/">History of Horyuji</a>
+                </div>
             
             </div>
             
@@ -353,6 +371,10 @@
                    
                 <div class="button">
                     <a href=https://www.jnto.go.jp/ph/spot-activity/kansai/nara/kasuga-taisha-shrine>Into Japan</a>
+                </div>
+                
+                <div class="button">
+                    <a href="https://www.ancient.eu/Kasuga_Taisha/">History of Kasuga Taisha</a>
                 </div>
             
             </div>
@@ -364,6 +386,10 @@
                 <div class="button">
                     <a href="https://kyoto.travel/en/shrine_temple/132">Kyoto Travel</a>
                 </div>
+                
+                <div class="button">
+                    <a href="https://www.lonelyplanet.com/japan/kyoto/attractions/kinkaku-ji/a/poi-sig/402672/356698">Lonely Planet</a>
+                </div>
             
             </div>
             
@@ -372,7 +398,11 @@
                 <h4>Kiyomizudera</h4>
                 
                 <div class="button">
-                    <a href="https://www.jrailpass.com/blog/kiyomizu-dera-temple">Japanese Rail</a>
+                    <a href="https://www.discoverkyoto.com/places-go/kiyomizu-dera/">Discover Kyoto</a>
+                </div>
+                
+                <div class="button">
+                    <a href="https://www.jrailpass.com/blog/kiyomizu-dera-temple">Rail Pass Kiyomizudera</a>
                 </div>
             
             </div>
@@ -384,6 +414,10 @@
                 <div class="button">
                     <a href="https://www.japanvisitor.com/japan-temples-shrines/tenryuji-temple">Japan Visitor</a>
                 </div>
+                
+                <div class="button">
+                    <a href="https://www.insidekyoto.com/tenryu-ji-temple-arashiyama">Tenryu-ji Guide</a>
+                </div>
             
             </div>
             
@@ -393,6 +427,10 @@
                 
                 <div class="button">
                     <a href="https://www.japanvisitor.com/japan-temples-shrines/todaiji-temple">Japan Visitor</a>
+                </div>
+                
+                <div class="button">
+                    <a href="https://www.ancient.eu/Todaiji/">History of Todai-ji</a>
                 </div>
             
             </div>
